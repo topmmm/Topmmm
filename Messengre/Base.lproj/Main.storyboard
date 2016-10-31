@@ -1,26 +1,68 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Messengre" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxZ-EL-lw2">
+                                <rect key="frame" x="20" y="151" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IFx-Bx-mNl">
+                                <rect key="frame" x="20" y="189" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdA-du-ZYH">
+                                <rect key="frame" x="20" y="227" width="107" height="30"/>
+                                <state key="normal" title="Create Account"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACK-dI-P1q">
+                                <rect key="frame" x="352" y="227" width="42" height="30"/>
+                                <state key="normal" title="Log In"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fxZ-EL-lw2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="131" id="26o-Zj-t0y"/>
+                            <constraint firstItem="DdA-du-ZYH" firstAttribute="top" secondItem="IFx-Bx-mNl" secondAttribute="bottom" constant="8" id="7Na-AS-el9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="IFx-Bx-mNl" secondAttribute="leading" id="Cmc-Ku-kCI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ACK-dI-P1q" secondAttribute="trailing" id="DBQ-V2-ddo"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="DdA-du-ZYH" secondAttribute="leading" id="E02-2R-8ja"/>
+                            <constraint firstItem="IFx-Bx-mNl" firstAttribute="top" secondItem="fxZ-EL-lw2" secondAttribute="bottom" constant="8" id="HF0-ER-pjn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fxZ-EL-lw2" secondAttribute="trailing" id="Ja3-WT-Fve"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fxZ-EL-lw2" secondAttribute="leading" id="aJs-V5-KVY"/>
+                            <constraint firstItem="ACK-dI-P1q" firstAttribute="top" secondItem="IFx-Bx-mNl" secondAttribute="bottom" constant="8" id="dgn-NL-BId"/>
+                            <constraint firstItem="IFx-Bx-mNl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e2u-q0-es3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IFx-Bx-mNl" secondAttribute="trailing" id="hfV-z5-SYD"/>
+                            <constraint firstItem="fxZ-EL-lw2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zxy-i5-rMY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-271" y="19"/>
         </scene>
     </scenes>
 </document>

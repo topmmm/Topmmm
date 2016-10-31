@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23B736AE6E8665E3F05B37B7 /* libPods-Messengre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBD872F62C157F6721BC640 /* libPods-Messengre.a */; };
 		D79A487F1DC6F2BF007769DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A487E1DC6F2BF007769DB /* AppDelegate.swift */; };
 		D79A48811DC6F2BF007769DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A48801DC6F2BF007769DB /* ViewController.swift */; };
 		D79A48841DC6F2BF007769DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79A48821DC6F2BF007769DB /* Main.storyboard */; };
 		D79A48861DC6F2BF007769DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79A48851DC6F2BF007769DB /* Assets.xcassets */; };
 		D79A48891DC6F2BF007769DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79A48871DC6F2BF007769DB /* LaunchScreen.storyboard */; };
+		D79A48911DC6F31E007769DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D79A48901DC6F31E007769DB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ABCE3C069F286ABB6BD1569 /* Pods-Messengre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messengre.release.xcconfig"; path = "Pods/Target Support Files/Pods-Messengre/Pods-Messengre.release.xcconfig"; sourceTree = "<group>"; };
+		8BBD872F62C157F6721BC640 /* libPods-Messengre.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Messengre.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9228FE7EE55D6D430B9ED416 /* Pods-Messengre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messengre.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Messengre/Pods-Messengre.debug.xcconfig"; sourceTree = "<group>"; };
 		D79A487B1DC6F2BF007769DB /* Messengre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messengre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79A487E1DC6F2BF007769DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D79A48801DC6F2BF007769DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		D79A48851DC6F2BF007769DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D79A48881DC6F2BF007769DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D79A488A1DC6F2BF007769DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D79A48901DC6F31E007769DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B736AE6E8665E3F05B37B7 /* libPods-Messengre.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C9791A3E7F032D80F28976B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9228FE7EE55D6D430B9ED416 /* Pods-Messengre.debug.xcconfig */,
+				0ABCE3C069F286ABB6BD1569 /* Pods-Messengre.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D79A48721DC6F2BF007769DB = {
 			isa = PBXGroup;
 			children = (
 				D79A487D1DC6F2BF007769DB /* Messengre */,
 				D79A487C1DC6F2BF007769DB /* Products */,
+				5C9791A3E7F032D80F28976B /* Pods */,
+				FCEFC89B2281D32EC240CAA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +77,18 @@
 				D79A48821DC6F2BF007769DB /* Main.storyboard */,
 				D79A48851DC6F2BF007769DB /* Assets.xcassets */,
 				D79A48871DC6F2BF007769DB /* LaunchScreen.storyboard */,
+				D79A48901DC6F31E007769DB /* GoogleService-Info.plist */,
 				D79A488A1DC6F2BF007769DB /* Info.plist */,
 			);
 			path = Messengre;
+			sourceTree = "<group>";
+		};
+		FCEFC89B2281D32EC240CAA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BBD872F62C157F6721BC640 /* libPods-Messengre.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D79A488D1DC6F2BF007769DB /* Build configuration list for PBXNativeTarget "Messengre" */;
 			buildPhases = (
+				1BC516B4A4785149BFCBCAB5 /* [CP] Check Pods Manifest.lock */,
 				D79A48771DC6F2BF007769DB /* Sources */,
 				D79A48781DC6F2BF007769DB /* Frameworks */,
 				D79A48791DC6F2BF007769DB /* Resources */,
+				EABC3E68CCBCC91A900C152D /* [CP] Embed Pods Frameworks */,
+				1DDF18F79C2A2F1832D9E79E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -98,6 +128,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 88UZ84VZEF;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -125,12 +160,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				D79A48891DC6F2BF007769DB /* LaunchScreen.storyboard in Resources */,
+				D79A48911DC6F31E007769DB /* GoogleService-Info.plist in Resources */,
 				D79A48861DC6F2BF007769DB /* Assets.xcassets in Resources */,
 				D79A48841DC6F2BF007769DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BC516B4A4785149BFCBCAB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1DDF18F79C2A2F1832D9E79E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Messengre/Pods-Messengre-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EABC3E68CCBCC91A900C152D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Messengre/Pods-Messengre-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D79A48771DC6F2BF007769DB /* Sources */ = {
@@ -259,6 +343,7 @@
 		};
 		D79A488E1DC6F2BF007769DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9228FE7EE55D6D430B9ED416 /* Pods-Messengre.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 88UZ84VZEF;
@@ -272,6 +357,7 @@
 		};
 		D79A488F1DC6F2BF007769DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ABCE3C069F286ABB6BD1569 /* Pods-Messengre.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 88UZ84VZEF;
@@ -302,6 +388,7 @@
 				D79A488F1DC6F2BF007769DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
